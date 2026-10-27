@@ -17,7 +17,7 @@ export const ExerciseForm = ({ enviarResultado }: Props) => {
 
   const [metaInput, setMetaInput] = useState("2");
 
-  const calcular = () => {
+  const calculateExcercise = () => {
     const horas = [
       Number(lunes),
       Number(martes),
@@ -141,7 +141,7 @@ export const ExerciseForm = ({ enviarResultado }: Props) => {
         keyboardType="numeric"
       />
 
-      <Button title="Calcular" onPress={calcular} />
+      <Button title="Calcular" onPress={calculateExcercise} />
     </View>
   );
 };
